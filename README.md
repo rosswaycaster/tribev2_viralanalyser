@@ -100,8 +100,18 @@ Full workflow notes: [docs/WORKFLOWS.md](docs/WORKFLOWS.md)
 |-- static/vendor/                 # Local browser dependencies
 |-- runtime_media/                 # Local runtime uploads/reports, ignored by Git
 |-- docs/INSTALL_WINDOWS.md        # Windows setup guide
+|-- docs/INSTALL_MAC.md            # macOS setup guide
 `-- docs/TROUBLESHOOTING.md        # Common issues
 ```
+
+## Quick start on macOS (Apple Silicon / Intel)
+
+1. Open Terminal in the project folder.
+2. Run `./start_mvp.sh`.
+3. After initial bootstrap completes, run `./start_mvp.sh` again.
+4. Open `http://127.0.0.1:8000` if browser does not open automatically.
+
+Full setup notes: [docs/INSTALL_MAC.md](docs/INSTALL_MAC.md)
 
 ## Quick start on Windows
 
@@ -137,12 +147,11 @@ Full setup notes: [docs/INSTALL_WINDOWS.md](docs/INSTALL_WINDOWS.md)
 
 Recommended local setup:
 
-- Windows 10/11 64-bit
+- macOS 13+ or Windows 10/11 64-bit
 - Python 3.11
-- 16 GB RAM
-- Modern 8-core CPU or better
-- NVIDIA GPU
-- 6 GB VRAM minimum, 12 GB+ preferred
+- 16 GB RAM (32 GB recommended for longer clips/workloads)
+- Modern multi-core CPU
+- NVIDIA GPU is optional (Windows-only CUDA acceleration path)
 - 30 GB+ free disk space, preferably on SSD
 
 ## Runtime data and privacy
